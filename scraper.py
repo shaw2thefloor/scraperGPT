@@ -9,7 +9,7 @@ with open ("prompt.txt", "r") as myfile:
 
 chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo",
                                                messages=[{"role": "user", "content": prompt}])
-with open("output.txt", "w") as text_file:
+with open("output.txt", "w+") as text_file:
     print(chat_completion.choices[0].message, file=text_file)
 
 read()

@@ -1,37 +1,11 @@
-extract all metadata terms and values and return as csv : Plant Materials and Growth Conditions
-The wild-type A. thaliana (ecotypes Col-0) was used for root scRNA-seq
-experiments. Seeds were sterilized with 15% bleach and germinated on
-vertical half-strength Murashige and Skoog (1/2 MS) plates (2.21 g of
-MS basal medium with vitamin powder and 8 g/l agar, pH 5.7) at 21C
-(day)/19C (night) in long-day conditions (16 h light/8 h dark, with a light
-intensity of 80 mmol/m2
-/s using Philips TLD 36W/865 and 36W/830
-bulbs). The root tissues were harvested after 10 days of growth. arr1-3,
-arr2-4, arr1-3 arr10-5, arr2-4 arr12-1, arr1-3 arr10-5, arr12-1, pDR5:GFP,
-and pTCSn:GFP were described previously (Sabatini et al., 1999; Leibfried
-et al., 2005; Mason et al., 2005; Zurcher et al., 2013; Zhang et al., 2017).
-For root phenotypic assays, the seeds were sterilized and germinated
-on 1/2 MS vertical plates.
-Preparation of Root Samples for scRNA-seq
-The root tip regions (0.5 cm in length from root tip) were harvested and digested for 2 h at room temperature in RNase-free enzyme solution (1.5%
-cellulase R10, 1.5% macerozyme R10, 0.4 M mannitol, 10 mM KCl, 10 mM
-CaCl2 and 0.1% BSA). The protoplasts were filtered with a cell strainer
-(40 mm diameter, Falcon #352340), concentrated, and washed three to
-four times with 8% mannitol at room temperature. Protoplast viability
-was determined by trypan blue staining, with the ratio of viable cells being
-more than 85%. The concentration of protoplasts was adjusted to 1500–
-2000 cells/ml. The cells were then processed with the 10xGenomics Single
-Cell Protocol (CG00052, RevC).
-scRNA-Seq Library Construction and Sequencing
-Approximately 15 000 counted cells were loaded on Single Cell A Chip.
-The libraries were constructed using Chromium Controller and Chromium
-Single Cell 30 Reagent Kits v2. In brief, cell suspensions in a chip were
-loaded on a Chromium Controller (10xGenomics, Pleasanton, CA) to
-generate single-cell GEMs (gel beads in emulsion). scRNA-seq libraries
-were then prepared using the Chromium Single Cell 30 Gel Bead and Library Kit (P/N #120236, 120237, 120262; 10xGenomics). Qualitative analysis of DNA library was performed by an Agilent 2100 Bioanalyzer. The
-concentration of DNA library was measured by Qubit (Invitrogen). Libraries
-were sequenced by an Illumina NovaSeq sequencer (Genergy Biotechnology Shanghai). The raw scRNA-seq dataset comprised Read1,
-Read2, and i7 index read. The 26-bp read length of Read1 contained
-the sequence of the 16 bp 10xBarcode and 10 bp UMI (unique molecular
-identifiers). The 98-bp read length of Read2 was the sequence of the
-cDNA fragment. In total, 317 339 569 reads were obtained.
+extract all metadata terms and values and return as a key/value pair dictionary in json:
+Plant Materials and Growth Conditions.
+Plants for scRNA-seq, in situ hybridization, and gras allele phenotyping were grown in 72-well trays in a Percival A100 growth chamber under 16-h days, a day temperature of 29.4 °C, a night temperature of 23.9 °C, and a relative humidity of 50%. Soil consisted of a 1:1 mixture of Turface MVP and LM111. The maize inbred B73 was used for scRNA-seq and in situ hybridization analyses. The gras32 and gras33 alleles were obtained from the Maize Genetics Co-Op Center (Urbana, IL) in the W22 inbred background. Crosses were performed at a field site in Aurora, NY. Kn1-O/+ and WT sibling material along with seedlings and mature plants for ZmWUS1/2 RT-PCR experiments were grown at the Gutermann Greenhouse Facility in Ithaca, NY. Well-introgressed Kn1-O/+ and lg1-R mutants in the B73 genetic background were utilized for genetic interaction analysis.
+In Situ Hybridization.
+RNA was isolated by TRIzol (Thermo Fisher Scientific) extraction from liquid nitrogen-ground 2-wk-old maize seedling shoot apices. Total RNA was DNase I (Promega) treated and cDNA was prepared using polyT-primed SuperScript III reverse transcriptase (Thermo Fisher Scientific) according to the manufacturer’s instructions. cDNA was then used as a template to amplify probe sequences, which were TA cloned into the pCR4-TOPO vector backbone encoding flanking T3 and T7 polymerase promoters (Thermo Fisher Scientific) (see Dataset S12 for PCR primers). Following the verification of probe sequence and orientation by Sanger sequencing, antisense RNA probes were generated using a DIG-labeling kit and the resulting probes hydrolyzed as previously described (Roche Diagnostics) (42). A locked nucleic acid (LNA) probe was used for the WOX9c in situ presented in Fig. 3C and was ordered directly from Qiagen. LNA probe hybridization was carried out using 10 μM probe concentration and a 55 °C hybridization temperature according to published methods (43).
+Tissues for in situ hybridization were prepared and processed as previously described (42). Briefly, 2-wk-old maize shoot apices were fixed overnight at 4 °C in FAA solution (3.7% formalin, 5% acetic acid, and 50% ethanol in water) and dehydrated through an ethanol series, cleared through increasing concentrations of Histo-Clear II (National Diagnostics), and then embedded in paraplast. Sections of 10 μm were prepared using a Leica RM2235 microtome (Leica Biosystems) and adhered to Probe-on-Plus microscope slides (Thermo Fisher Scientific). Sectioned tissues were then deparaffinized and rehydrated through a reverse ethanol series prior to Proteinase K (Sigma-Aldrich) treatment, refixation, and acetic anhydride treatment. Dehydrated tissues were then hybridized with probe overnight, washed, RNase A (Roche Diganostics) treated, and incubated with AP-conjugated anti-DIG antibody (Roche Diagnostics). A colorimetric nitro-blue tetrazolium/5-bromo-4-chloro-3′-indolyphosphate (Roche Diagnostics) reaction was then allowed to proceed until sufficient signal developed at which point the reaction was stopped in Tris(hydroxymethyl)aminomethane–ethylenediaminetetraacetic acid (EDTA), slides were dehydrated, washed in Histo-Clear II, and mounted with Permount (Thermo Fisher Scientific). Images were obtained using an Axio Imager Z10 (Carl Zeiss Microscopy) microscope equipped with an AxioCam MRc5 camera.
+RT-PCR of ZmWUS1/2 Expression.
+Total RNA was isolated (as in in situ hybridization) from B73 shoot apices consisting of the SAM and the three most recently initiated primordia, immature ∼2-mm ears containing inflorescence meristems, and mature seedling leaf 3 blade tissue. A total of 1 µg of total RNA from each tissue was DNase-I treated and used as input for reverse transcription using SuperScript III reverse transcriptase according to the manufacturer’s instructions. A total of 1 µL of the 25 µL RT reaction was used for PCR analysis (35 cycles). PCR products were run on a 2% agarose gel and visualized with ethidium bromide under ultraviolet (UV) light. The genomic DNA (gDNA) control was derived from B73 seedling leaf tissue prepared as previously described (44).
+Phenotyping.
+For gras allele phenotyping, genomic DNA was extracted from the leaf tissue of F2 seedlings segregating for exonic gras32 and gras33 Mutator transposon insertion alleles. DNA extraction was performed as previously described (44). Plants were genotyped by PCR (see Dataset S12 for primers) and paraffin-embedded FAA-fixed shoot apex tissues (see in situ hybridization) were longitudinally sectioned to 10 μm and adhered to Probe-on-Plus slides. Tissues were deparaffinized and rehydrated through an ethanol series and then equilibrated in 1% sodium borate (wt/vol). Tissues were then stained in a 0.5% solution of o-toluidine (TBO) in 1% sodium borate for 5 min followed by an ethanol dehydration series, washing in Histo-Clear II, and mounting in Permount. Samples were then imaged (see in situ hybridization). SAM width and height were determined in medial sections using ImageJ. For analyses of Kn1-O/+ seedlings, leaf sheath and blade lengths were measured by hand with a meter stick when seedling leaves were fully mature. For Kn1-O/+ and lg1-R genetic interaction analysis, F1BC1 populations were generated, and greenhouse-grown Kn1-O/+; lg1 double mutants were selected based on phenotypic analysis of the blade/sheath boundary, where lg1-R mutants remove ligule and auricle tissues (SI Appendix, Fig. S10). Fully adult leaves were imaged, selecting the leaf above the uppermost ear, with a Canon Rebel digital single-lens reflex camera.
+Cell-Cycle Quantification.
