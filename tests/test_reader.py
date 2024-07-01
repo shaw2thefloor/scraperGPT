@@ -20,4 +20,4 @@ class TestReader(unittest.TestCase):
                 read(os.path.join(tmpdir, "output.txt"))
 
                 # Check that the output matches the expected content
-                mock_stdout.assert_called_once_with("bar\n")
+                self.assertDictContainsSubset({"foo": "bar"}, content)

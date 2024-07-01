@@ -1,4 +1,72 @@
 {
-  "role": "assistant",
-  "content": "{\n  \"Plant Materials\": \"scRNA-seq, in situ hybridization, and gras allele phenotyping\",\n  \"Growth Conditions\": \"72-well trays, Percival A100 growth chamber, 16-h days, day temperature of 29.4 \u00b0C, night temperature of 23.9 \u00b0C, relative humidity of 50%, soil mixture of Turface MVP and LM111\",\n  \"Maize Inbred\": \"B73\",\n  \"Gras Alleles\": \"gras32 and gras33\",\n  \"Maize Genetics Co-Op Center\": \"Urbana, IL\",\n  \"Field Site\": \"Aurora, NY\",\n  \"Greenhouse Facility\": \"Gutermann Greenhouse Facility, Ithaca, NY\",\n  \"Maize Mutants\": \"Kn1-O/+, WT, lg1-R\",\n  \"Genetic Background\": \"B73\",\n  \"RNA Isolation Method\": \"TRIzol (Thermo Fisher Scientific) extraction from liquid nitrogen-ground 2-wk-old maize seedling shoot apices\",\n  \"Total RNA Treatment\": \"DNase I (Promega) treated\",\n  \"cDNA Preparation\": \"polyT-primed SuperScript III reverse transcriptase (Thermo Fisher Scientific)\",\n  \"Probe Cloning\": \"pCR4-TOPO vector backbone encoding flanking T3 and T7 polymerase promoters (Thermo Fisher Scientific)\",\n  \"Probe Sequencing Verification\": \"Sanger sequencing\",\n  \"Antisense RNA Probe Generation\": \"DIG-labeling kit\",\n  \"Locked Nucleic Acid (LNA) Probe\": \"Ordered from Qiagen\",\n  \"Tissue Preparation for in situ hybridization\": \"Fixed in FAA solution, dehydrated, embedded in paraplast, sections prepared using a Leica RM2235 microtome, adhered to Probe-on-Plus microscope slides\",\n  \"Proteinase K Treatment\": \"Sigma-Aldrich\",\n  \"RNase A Treatment\": \"Roche Diganostics\",\n  \"AP-conjugated anti-DIG Antibody\": \"Roche Diagnostics\",\n  \"Colorimetric Reaction\": \"nitro-blue tetrazolium/5-bromo-4-chloro-3\u2032-indolyphosphate (Roche Diagnostics)\",\n  \"RT-PCR Tissues\": \"B73 shoot apices, immature \u223c2-mm ears containing inflorescence meristems, mature seedling leaf 3 blade tissue\",\n  \"Reverse Transcription\": \"SuperScript III reverse transcriptase\",\n  \"Genomic DNA (gDNA) Control\": \"B73 seedling leaf tissue\",\n  \"Phenotyping Method\": \"Genotyping by PCR, paraffin-embedded FAA-fixed shoot apex tissues, longitudinal sectioning, staining in a 0.5% solution of o-toluidine (TBO)\",\n  \"Sam Width and Height Determination Method\": \"ImageJ\",\n  \"Kn1-O/+ Seedling Measurements\": \"Manual measurements with a meter stick\",\n  \"Kn1-O/+ and lg1-R Genetic Interaction Analysis\": \"F1BC1 populations, phenotypic analysis of the blade/sheath boundary\",\n  \"Cell-Cycle Quantification Method\": \"Not specified\"\n}"
+  "Markers": "Hbm, Hba1, Lmo2, Ramp2, T, Fgf8, Shh, Tf, Ckb, Pax6, Meox1, Tcf15, Cnmd, Shisa2, Foxd3, Sox10",
+  "Clusters": "10",
+  "Profiles": "lateral plate mesoderm, neural tissue, early somite, maturing somite, ectoderm, blood, endothelial, tailbud, notochord, neural crest cells",
+  "Spatial Patterns": "localised anterior-to-posterior restricted gene expression",
+  "Ectoderm Tissue": "few distinguishing markers along the A-P axis",
+  "Posterior Samples": "blood (Hbm, Hba1) and endothelial marker genes (Lmo2, Ramp2), indicative of extra-embryonic tissue",
+  "Tailbud Genes": "T (= brachyury) and Fgf8",
+  "Notochord Markers": "higher expression in posterior sections (Shh)",
+  "Transferrin": "expressed along the axis with lower levels around the tailbud region",
+  "Neural Tissue Genes": "Ckb, Pax6",
+  "Early Somites Genes": "Meox1, Tcf15",
+  "Maturing Somites Genes": "Cnmd, Shisa2",
+  "Gene Expression Trend": "gradual increase towards the anterior",
+  "Neural Crest cells": "beginning to migrate and become distinguishable in more anterior sections with discreet profiles for Foxd3 and Sox10"
+}
+{
+"scRNA-seq analysis markers": "10 different clusters",
+"Profiles established for": ["lateral plate mesoderm", "neural tissue", "early somite", "maturing somite", "ectoderm", "blood", "endothelial", "tailbud", "notochord", "neural crest cells"],
+"Spatial gene expression patterns": "Anterior-to-posterior restricted",
+"Exception for spatial gene expression patterns": "Ectoderm",
+"Position of identified blood marker genes (Hbm, Hba1)": "Most posterior samples",
+"Position of identified endothelial marker genes (Lmo2, Ramp2)": "Most posterior samples",
+"Suggestion about most posterior sample": "Region comprising extra-embryonic tissue",
+"Position with onset of tailbud genes (T = brachyury and Fgf8)": "Subsequent sections",
+"Notochord markers with high expression in posterior sections": "Shh",
+"Transferrin (TF) expression": "Along the axis, with lower levels around the tailbud region",
+"Neural tissue markers (Ckb, Pax6)": "Increase in gene expression towards the anterior",
+"Early somite markers (Meox1, Tcf15)": "Increase in gene expression towards the anterior",
+"Maturing somite markers (Cnmd, Shisa2)": "Increase in gene expression towards the anterior",
+"Neural crest cell status": "Beginning to migrate and become distinguishable in the more anterior sections",
+"Neural crest cell discreet profile genes": ["Foxd3", "Sox10"]
+}
+{
+"number_of_identified_clusters": 10,
+"identified_clusters": ["lateral plate mesoderm", "neural tissue", "early somite", "maturing somite", "ectoderm", "blood", "endothelial", "tailbud", "notochord", "neural crest cells"],
+"identified_profile_marker": "Fig. 3",
+"Spatial_patterns_of_localised_gene_expression": "anterior-to-posterior",
+"ectoderm_markers": "Few distinguishing markers along the A-P axis",
+"posterior_samples_identified_markers": {
+"blood": ["Hbm", "Hba1"],
+"endothelial": ["Lmo2", "Ramp2"]
+},
+"region_comprising_extra_embryonic_tissue": "Most posterior samples",
+"onset_of_tailbud_genes": ["T (brachyury)", "Fgf8"],
+"notochord_markers_expression": "More in posterior sections (Shh)",
+"transferrin_expression": "Expressed along the axis with lower levels around the tailbud region",
+"Neural_tissue_genes": ["Ckb", "Pax6"],
+"early_somites_genes": ["Meox1", "Tcf15"],
+"maturing_somites_genes": ["Cnmd", "Shisa2"],
+"gene_expression_profiles": "Gradual increase towards the anterior",
+"neural_crest_cells_migration_sign": "Beginning to migrate and become distinguishable in the more anterior sections",
+"neural_crest_cells_detected_profiles": ["Foxd3", "Sox10"],
+"detected_profiles_marker": "Fig. 3C"
+}
+{
+"Marker_Analysis": "scRNA-seq",
+"Identified_Clusters": 10,
+"Profiles_Identified": ["lateral plate mesoderm", "neural tissue", "early somite", "maturing somite", "ectoderm", "blood", "endothelial", "tailbud", "notochord", "neural crest cells"],
+"Figure_Reference": "Fig. 3",
+"Spatial_Pattern": "Anterior-to-Posterior restricted gene expression",
+"Exception_From_Spatial_Pattern": "Ectoderm",
+"Posterior_Samples_Identification": ["Blood (Hbm, Hba1)", "Endothelial marker genes (Lmo2, Ramp2)"],
+"Embryonic_Tissue_Component": "Extra-embryonic tissue",
+"Tailbud_Genes_Onset": ["T (= brachyury)", "Fgf8"],
+"Highly_Expressed_Notochord_Markers": "Shh",
+"Transferrin_Expression": "Expressed along the axis, with lower levels around the tailbud region",
+"Neural_Tissue_Markers": "Ckb, Pax6",
+"Early_Somites_Markers": "Meox1, Tcf15",
+"Maturing_Somites_Markers": "Cnmd, Shisa2",
+"Start_of_Neural_Crest_Cells_Migration": "In the more anterior sections with discreet profiles detected for Foxd3 and Sox10"
 }
